@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document3</title>
+    <link rel="stylesheet" href="buyTickets.css" />
+  </head>
+  <body>
+    <container class="container-buy-tickets">
+      <header class="header">
+        <div class="flex-container">
+          <img class="logo" src="images/logo.png" alt="logo" />
+          <nav>
+            <ul>
+              <li>now playing</li>
+              <li>coming soon</li>
+              <li>about</li>
+            </ul>
+          </nav>
+        </div>
+        <!--1. fixa layout i booking fälet
+          2. lägg till input fält för name, email och phonnr. -- KLART!
+          3. lägg till knapp BOOK NOW!-- KLART
+          4. börja skriva js och koppla html 
+          5. spara klickade platser i local storage
+              för att kunna visa dem på sista sidan -->
+      </header>
+      <div class="top">top blank space</div>
+      <div class="left">left blank space</div>
+      <div class="booking">
+        <div class="booking-container">
+          <div class="booknig-info">
+            <h1>BOOKING INFO</h1>
+          </div>
+          <div class="inputs">
+            <input
+              id="fullName"
+              type="text"
+              class="name"
+              placeholder="Full Name"
+            />
+            <input id="email" type="text" class="email" placeholder="Email" />
+            <input
+              id="phoneNumber"
+              type="text"
+              class="phonenumber"
+              placeholder="Phone number"
+            />
+          </div>
+          <div class="seats">
+            SEATS:
+            <div class="selected seats">selected seats here</div>
+          </div>
+          <div class="button-box">
+            <button class="button">BOOK NOW!</button>
+          </div>
+        </div>
+      </div>
+      <div class="right">right blank space</div>
+      <div class="bottom">bottom blank space</div>
+    </container>
+
+    <script src="buyTickets.js"></script>
+  </body>
+</html>

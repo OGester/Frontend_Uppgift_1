@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap");
+body {
+  font-family: "Oswald", sans-serif, "Inter", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-movie-theater {
+  margin: 40px 100px 40px 100px;
+  /* background-color: bisque; */
+  display: grid;
+  gap: 40px;
+  grid-template-rows: 60px 250px 480px;
+  grid-template-columns: 450px 1fr;
+  grid-template-areas:
+    "head head"
+    "main text"
+    "box box";
+}
+
+.header {
+  border-radius: 8px;
+  background-color: #b30623;
+  grid-area: head;
+  padding: 2px 40px 0px 40px;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 25px;
+}
+ul {
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  list-style: none;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+.main {
+  /* background-color: lightsalmon; */
+  grid-area: main;
+}
+.movie-poster {
+  border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.text {
+  /* background-color: yellow; */
+  grid-area: text;
+}
+.text h1 {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: left;
+  font-size: 35px;
+  margin-top: 0px;
+  margin-bottom: -16px;
+}
+.text h2 {
+  display: flex;
+  justify-content: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  color: grey;
+  margin-bottom: -5px;
+}
+.text p {
+  /* background-color: #B30623; */
+  display: flex;
+  justify-content: left;
+  width: 500px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.movie-duration {
+  height: 80px;
+  width: 180px;
+  margin-left: -8px;
+}
+
+.theater-box {
+  /* background-color: lightblue; */
+  grid-area: box;
+  display: grid;
+  grid-template-rows: 80px 250px 60px 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "screen screen"
+    "left right"
+    "reserved reserved"
+    "bottom bottom";
+}
+
+.screen {
+  grid-area: screen;
+  /*  background-color: antiquewhite; */
+}
+.cinema-screen {
+  display: flex;
+  justify-content: center;
+  margin-left: 280px;
+}
+
+.theater-left {
+  grid-area: left;
+  /*  background-color: aqua; */
+}
+.theater-right {
+  grid-area: right;
+  /*  background-color: aquamarine; */
+}
+.book-now {
+  grid-area: bottom;
+  /* background-color: rgb(188, 179, 143); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reserved {
+  /* background-color: #fc0; */
+  grid-area: reserved;
+}
+
+.reserved-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  grid-area: button;
+  background-color: #d00;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding: 10px 70px 10px 70px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #a00;
+}
+
+.seats-left {
+  /* background-color: #B30623; */
+  display: grid;
+  grid-template-columns: repeat(12, 20px);
+  grid-template-rows: repeat(8, 20px);
+  gap: 5px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 470px;
+}
+
+.seats-right {
+  /* background-color: blueviolet; */
+  display: grid;
+  grid-template-columns: repeat(12, 20px);
+  grid-template-rows: repeat(8, 20px);
+  gap: 5px;
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.seat {
+  display: none;
+  /* hide the actual checkbox, it will be styled by the label */
+}
+
+.seat-label {
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.seat-label.available:hover,
+.seat:checked + .seat-label.available {
+  background-color: #fc0;
+}
+
+.seat-label.reserved,
+.seat:disabled + .seat-label {
+  background-color: #d00;
+  cursor: not-allowed;
+}
