@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap");
 body {
-  font-family: "Oswald", sans-serif,"Inter", sans-serif;
+  font-family: "Oswald", sans-serif, "Inter", sans-serif;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -10,25 +10,25 @@ body {
 
 .container-buy-tickets {
   margin: 40px 100px 40px 100px;
-  /* background-color: bisque; */ 
+  /* background-color: bisque; */
   display: grid;
   gap: 20px;
   grid-template-rows: 60px 60px 640px 60px;
-  grid-template-columns: 1fr 640px 1fr; 
-  grid-template-areas: 
-  "head head head"
-  "top top top"
-  "leftside booking rightside"
-  "foot foot foot";
+  grid-template-columns: 1fr 640px 1fr;
+  grid-template-areas:
+    "head head head"
+    "top top top"
+    "leftside booking rightside"
+    "foot foot foot";
 }
 
-.header{
+.header {
   border-radius: 8px;
-  background-color: #B30623;
+  background-color: #b30623;
   grid-area: head;
   padding: 2px 40px 0px 40px;
 }
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,16 +59,16 @@ ul {
   gap: 20px;
   grid-template-rows: 80px 200px 60px 80px;
   grid-template-columns: 1fr;
-  grid-template-areas: 
-  "booking-info"
-  "inputs"
-  "seats"
-  "button";
+  grid-template-areas:
+    "booking-info"
+    "inputs"
+    "seats"
+    "button";
 }
-.booknig-info{
+.booknig-info {
   /* background-color: rgb(46, 46, 124); */
   font-family: "Oswald", sans-serif;
-  color:white;
+  color: white;
   font-size: 24px;
   margin-top: -15px;
   font-weight: 250;
@@ -76,7 +76,7 @@ ul {
   grid-area: booking-info;
 }
 
-.inputs{
+.inputs {
   /* background-color: rgb(21, 21, 212); */
   grid-area: inputs;
   display: grid;
@@ -84,20 +84,20 @@ ul {
   grid-template-rows: repeat(3, 50px);
   grid-template-columns: 1fr;
   grid-template-areas:
-  "name"
-  "email"
-  "phonenr";
+    "name"
+    "email"
+    "phonenr";
 }
-.name{
+.name {
   background-color: white;
   border: none;
   border-radius: 8px;
 
- /*  margin-left: 0px;
+  /*  margin-left: 0px;
   margin-right: -10px; */
   grid-area: name;
 }
-.email{
+.email {
   background-color: white;
   border: none;
   border-radius: 8px;
@@ -105,15 +105,15 @@ ul {
   margin-right: -10px; */
   grid-area: email;
 }
-.phonenumber{
+.phonenumber {
   background-color: white;
   border: none;
   border-radius: 8px;
   /* margin-left: 50px;
   margin-right: -10px; */
   grid-area: phonenr;
-} 
-.seats{
+}
+.seats {
   background-color: rgb(119, 72, 72);
   margin-top: -10px;
   color: white;
@@ -122,13 +122,13 @@ ul {
   font-size: 20px;
   grid-area: seats;
 }
-.button-box{
+.button-box {
   /* background-color: white;  */
   grid-area: button;
 }
 button {
   background-color: white;
-  color: #B30623;
+  color: #b30623;
   font-family: "Oswald", sans-serif;
   padding: 0px 205px 0px 205px;
   margin-left: 0.5px;
@@ -140,7 +140,7 @@ button {
   text-align: center;
 }
 button:hover {
-  background-color: #a00;
+  background-color: rgb(187, 184, 184);
 }
 
 .top {
@@ -154,7 +154,7 @@ button:hover {
 }
 
 .booking {
-  background-color:#B30623;
+  background-color: #b30623;
   border-radius: 8px;
   grid-area: booking;
 }

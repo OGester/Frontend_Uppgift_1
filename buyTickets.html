@@ -6,7 +6,7 @@
     <title>Document3</title>
     <link rel="stylesheet" href="buyTickets.css" />
   </head>
-  <body>
+  <body onload="getBookedSeats()">
     <container class="container-buy-tickets">
       <header class="header">
         <div class="flex-container">
@@ -50,10 +50,12 @@
           </div>
           <div class="seats">
             SEATS:
-            <div class="selected seats">selected seats here</div>
+            <div id="selected-seats"></div>
           </div>
           <div class="button-box">
-            <button class="button">BOOK NOW!</button>
+            <button class="button" onclick="confirmationAlert()">
+              BOOK NOW!
+            </button>
           </div>
         </div>
       </div>
@@ -61,6 +63,7 @@
       <div class="bottom">bottom blank space</div>
     </container>
 
-    <script src="buyTickets.js"></script>
+    <script src="booking.js"></script>
   </body>
 </html>
+<!--  onclick="confirmationAlert()" -->
