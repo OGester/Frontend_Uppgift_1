@@ -31,9 +31,6 @@ function bookTicket() {
 
 //function that runs when buyticket.html loads and retrieves the reserved seats from local storage
 function getBookedSeats() {
-  if (!selectedSeats.length) {
-    alert("hej");
-  }
   document.getElementById("selected-seats").innerHTML = JSON.parse(
     localStorage.selectedSeats
   );
